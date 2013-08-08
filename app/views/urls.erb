@@ -1,0 +1,10 @@
+<p>
+  <% if @short_url == nil %>
+    <%= @new_url.errors %>
+  <% else %>
+  copy this link: 
+<a href=<%= @short_url %>><%= @short_url %></a>
+  <% end %>
+
+
+
